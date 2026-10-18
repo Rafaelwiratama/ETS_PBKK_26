@@ -1,6 +1,6 @@
-# GameVault — Desktop Game Store Management
+#  Desktop Game Store Management
 
-GameVault adalah starter project aplikasi desktop C# untuk tugas PBKK UTS. Aplikasi ini membantu toko game mengelola katalog, stok, transaksi pembelian/penjualan, dan ringkasan laporan. UI memakai tema dark navy dengan aksen ungu/mint, katalog berbentuk kartu visual, serta halaman data yang bisa difilter dan diekspor. Layout dashboard, laporan, header halaman, dan toolbar katalog menyesuaikan lebar jendela agar ruang layar dimanfaatkan lebih baik pada ukuran monitor dan skala Windows yang berbeda.
+... adalah starter project aplikasi desktop C# untuk tugas PBKK UTS. Aplikasi ini membantu toko game mengelola katalog, stok, transaksi pembelian/penjualan, dan ringkasan laporan. UI memakai tema dark navy dengan aksen ungu/mint, katalog berbentuk kartu visual, serta halaman data yang bisa difilter dan diekspor. Layout dashboard, laporan, header halaman, dan toolbar katalog menyesuaikan lebar jendela agar ruang layar dimanfaatkan lebih baik pada ukuran monitor dan skala Windows yang berbeda.
 
 ## Teknologi
 - C# / .NET 8
