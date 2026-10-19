@@ -2,7 +2,7 @@
 
 **Slashers** adalah aplikasi desktop berbasis Rich UI untuk mengelola katalog game, inventaris, pembelian stok, penjualan, riwayat transaksi, dan laporan. Aplikasi menggunakan identitas visual pixel-block dengan warna graphite, teal, amber, dan coral.
 
-Proyek ini dikembangkan untuk memenuhi tugas UTS mata kuliah **Pemrograman Berbasis Kerangka Kerja (PBKK)**, yang mencakup Product Requirements Document (PRD), implementasi aplikasi desktop, serta video presentasi/demo.
+Proyek ini dikembangkan untuk memenuhi Proyek ETS mata kuliah **Pemrograman Berbasis Kerangka Kerja (PBKK)**, yang mencakup Product Requirements Document (PRD), implementasi aplikasi desktop, serta video presentasi/demo.
 
 ## Fitur Utama
 
@@ -121,7 +121,7 @@ Video presentasi/demo dapat ditambahkan ke repository setelah selesai direkam da
 
 ## Status Proyek
 
-Slashers dikembangkan sebagai proyek UTS PBKK. Pengujian fungsional, dokumentasi, dan demonstrasi dilakukan untuk memastikan implementasi sesuai dengan kebutuhan pada PRD.
+Slashers dikembangkan sebagai proyek ETS PBKK. Pengujian fungsional, dokumentasi, dan demonstrasi dilakukan untuk memastikan implementasi sesuai dengan kebutuhan pada PRD.
 
 Fitur yang dinyatakan selesai harus berdasarkan hasil pengujian aplikasi, bukan hanya keberadaan kode atau tampilan antarmuka.
 
