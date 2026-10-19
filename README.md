@@ -102,18 +102,6 @@ Tekan **F5** untuk menjalankan Slashers.
 
 Jika koneksi database gagal, periksa instalasi LocalDB dan konfigurasi connection string pada `Data/Database.cs`.
 
-## Alur Demo
-
-Urutan yang disarankan untuk mencoba aplikasi:
-
-1. Buka dashboard dan amati ringkasan inventaris.
-2. Buka katalog, cari game, lalu lihat detail dan cover.
-3. Tambahkan atau edit game dan simpan perubahan.
-4. Catat pembelian stok dan periksa penambahan stok.
-5. Catat penjualan dan periksa pengurangan stok.
-6. Coba menjual melebihi stok yang tersedia untuk menguji validasi.
-7. Buka riwayat transaksi, stok kritis, dan laporan.
-8. Ekspor data ke CSV jika diperlukan.
 
 ## Dokumentasi
 
@@ -129,7 +117,7 @@ Video presentasi/demo dapat ditambahkan ke repository setelah selesai direkam da
 |---|---|---|
 | 1 | Rafael Mulia Wiratama Simarmata | 5025241196 |
 | 2 | Muhammad Rivaldi Sholihin | 5025241188 |
-| 3 | Ananda Faris GR | Isi NIM |
+| 3 | Ananda Faris GR | 5025231280 |
 
 ## Status Proyek
 
