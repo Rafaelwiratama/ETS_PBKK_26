@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Slashers.WPF</RootNamespace>
+    <AssemblyName>Slashers.WPF</AssemblyName>
+    <Version>1.0.0</Version>
+    <Product>Slashers - Game Store Management</Product>
+    <Description>Desktop Rich UI application for game catalog, inventory, purchases, sales, and reports.</Description>
+    <ApplicationIcon>Assets\Slashers.ico</ApplicationIcon>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Assets\Slashers_AppIcon.png" />
+    <None Remove="Assets\Slashers_Logo_Primary.png" />
+    <None Remove="Assets\Slashers_Logo_Monochrome.png" />
+    <None Remove="Assets\Slashers_Logo_LightBackground.png" />
+    <None Remove="Assets\Slashers.ico" />
+    <Resource Include="Assets\Slashers_AppIcon.png" />
+    <Resource Include="Assets\Slashers_Logo_Primary.png" />
+    <Resource Include="Assets\Slashers_Logo_Monochrome.png" />
+    <Resource Include="Assets\Slashers_Logo_LightBackground.png" />
+    <Resource Include="Assets\Slashers.ico" />
+  </ItemGroup>
+</Project>
