@@ -1,4 +1,5 @@
 # Slashers — Game Store Management
+<img width="954" height="315" alt="Slashers_Logo_Primary" src="https://github.com/user-attachments/assets/592cceda-2eb9-4e33-a1a9-3d1a3f83e944" />
 
 **Slashers** adalah aplikasi desktop Rich UI untuk mengelola katalog game, inventaris, transaksi pembelian dan penjualan, riwayat transaksi, stok kritis, mitra, serta laporan. Identitas visual menggunakan logo pixel-block berbentuk huruf **S** yang tersusun dari blok modular.
 
