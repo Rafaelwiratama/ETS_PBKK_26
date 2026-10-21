@@ -1,39 +1,44 @@
 # Slashers — Game Store Management
 
-**Slashers** adalah aplikasi desktop berbasis Rich UI untuk mengelola katalog game, inventaris, pembelian stok, penjualan, riwayat transaksi, dan laporan. Aplikasi menggunakan identitas visual pixel-block dengan warna graphite, teal, amber, dan coral.
+**Slashers** adalah aplikasi desktop Rich UI untuk mengelola katalog game, inventaris, transaksi pembelian dan penjualan, riwayat transaksi, stok kritis, mitra, serta laporan. Identitas visual menggunakan logo pixel-block berbentuk huruf **S** yang tersusun dari blok modular.
 
-Proyek ini dikembangkan untuk memenuhi Proyek ETS mata kuliah **Pemrograman Berbasis Kerangka Kerja (PBKK)**, yang mencakup Product Requirements Document (PRD), implementasi aplikasi desktop, serta video presentasi/demo.
+> Proyek UTS PBKK ini mencakup PRD, implementasi aplikasi desktop, dan video presentasi/demo. Nama Slashers adalah nama produk dan tidak membatasi katalog hanya pada game bergenre slasher.
 
-## Fitur Utama
+## 1. Ringkasan Produk
 
-- **Dashboard:** ringkasan jumlah game, total stok, penjualan, grafik, dan aktivitas terbaru.
-- **Katalog Game:** tambah, lihat, ubah, hapus, dan cari data game.
-- **Gambar Cover:** memilih gambar cover untuk setiap game.
-- **Pembelian Stok:** mencatat pembelian dan menambah stok.
-- **Penjualan:** mencatat transaksi, menghitung total, dan memperbarui stok.
-- **Riwayat Transaksi:** melihat dan memfilter catatan pembelian serta penjualan.
-- **Stok Kritis:** memantau game dengan stok lima unit atau kurang.
-- **Mitra Toko:** melihat informasi pelanggan dan pemasok dari transaksi.
-- **Laporan:** melihat ringkasan transaksi dan game terlaris.
-- **Ekspor CSV:** menyimpan data yang didukung ke file CSV.
+Yharnam Exchange telah diganti namanya menjadi **Slashers**. Aplikasi membantu pencatatan katalog game dan pergerakan stok melalui antarmuka Windows desktop. Pengguna dapat mengelola informasi game, mencatat pembelian dan penjualan, menelusuri transaksi, memantau stok kritis, melihat laporan, dan mengekspor data ke CSV.
 
-## Teknologi
+Antarmuka menggunakan pendekatan Rich UI: sidebar navigasi, kartu statistik, grafik penjualan, katalog berbasis cover, panel detail, formulir, tabel transaksi, dan halaman laporan. Gaya visual memakai graphite `#171A22`, slate `#202631`, teal `#20BFA9`, amber `#FFC857`, coral `#FF647C`, dan off-white `#F0F2F5`.
 
-| Komponen | Teknologi |
+## 2. Fitur yang Diimplementasikan
+
+- **Dashboard:** jumlah game, total unit stok, penjualan hari ini, jumlah game dengan stok kritis, penjualan per hari selama tujuh hari, dan transaksi terbaru.
+- **Katalog:** tambah, lihat, edit, hapus, pencarian judul/platform/genre, cover, harga beli, harga jual, genre, platform, stok, dan ekspor CSV.
+- **Cover game:** memilih gambar berformat PNG, JPG/JPEG, BMP, GIF, atau TIFF. Gambar yang dipilih disalin ke direktori data lokal Slashers agar tidak bergantung pada lokasi asli file.
+- **Pembelian stok:** mencatat game, kuantitas, harga unit, serta pemasok. Jika transaksi berhasil, stok bertambah dan catatan transaksi disimpan.
+- **Penjualan:** mencatat game, kuantitas, harga unit, pelanggan, diskon, dan metode pembayaran. Penjualan melebihi stok ditolak.
+- **Riwayat transaksi:** menampilkan transaksi pembelian/penjualan, mendukung filter jenis dan ekspor CSV.
+- **Stok kritis:** menampilkan game dengan stok lima unit atau kurang.
+- **Mitra toko:** merangkum pihak pelanggan/pemasok yang tercatat pada transaksi.
+- **Laporan:** ringkasan total penjualan/pembelian dan game terlaris, dengan ekspor CSV untuk data yang didukung.
+
+## 3. Teknologi
+
+| Komponen | Pilihan |
 |---|---|
-| Bahasa pemrograman | C# |
-| Framework UI | WPF dan XAML |
-| Platform | .NET 8 |
+| Bahasa | C# |
+| UI | WPF dan XAML |
+| Target framework | .NET 8 untuk Windows (`net8.0-windows`) |
 | Database | Microsoft SQL Server LocalDB |
-| Akses database | Microsoft.Data.SqlClient |
+| Provider SQL | `Microsoft.Data.SqlClient` |
 | IDE | Visual Studio untuk Windows |
 
-**Catatan:** aplikasi menggunakan SQL Server LocalDB, bukan MySQL/MariaDB dari XAMPP.
+**Slashers tidak menggunakan XAMPP/MySQL.** Untuk konfigurasi default, aplikasi menggunakan SQL Server Express LocalDB.
 
-## Struktur Proyek
+## 4. Struktur Repository
 
 ```text
-Slashers.WPF/
+Slashers.WPF/  (root repository setelah isi ZIP diekstrak dan diunggah)
 ├── App.xaml
 ├── App.xaml.cs
 ├── MainWindow.xaml
@@ -56,75 +61,5 @@ Slashers.WPF/
 │   └── IMPLEMENTATION_QA.md
 ├── Slashers.WPF.csproj
 ├── Slashers.WPF.sln
+├── GITHUB_UPLOAD_GUIDE.md
 └── README.md
-```
-
-## Persyaratan Sistem
-
-Sebelum menjalankan aplikasi, pastikan komputer sudah memiliki:
-
-1. Windows.
-2. Visual Studio dengan workload **.NET desktop development**.
-3. .NET 8 SDK.
-4. Microsoft SQL Server Express LocalDB.
-
-## Cara Menjalankan Aplikasi
-
-### 1. Unduh source code
-
-Unduh repository melalui tombol **Code → Download ZIP**, kemudian ekstrak file tersebut ke folder lokal.
-
-### 2. Buka proyek
-
-Buka file `Slashers.WPF.sln` menggunakan Visual Studio.
-
-### 3. Pastikan database tersedia
-
-Pastikan SQL Server Express LocalDB sudah terpasang. Instance default yang digunakan adalah:
-
-```text
-(localdb)\MSSQLLocalDB
-```
-
-Pada konfigurasi default, aplikasi akan mencoba membuat database `Slashers`, tabel `Games` dan `Transactions`, serta data game contoh saat inisialisasi pertama.
-
-### 4. Build aplikasi
-
-Di Visual Studio, pilih:
-
-`Build → Rebuild Solution`
-
-Tunggu hingga proses build selesai. Jika tidak terdapat error build, lanjutkan ke langkah berikutnya.
-
-### 5. Jalankan aplikasi
-
-Tekan **F5** untuk menjalankan Slashers.
-
-Jika koneksi database gagal, periksa instalasi LocalDB dan konfigurasi connection string pada `Data/Database.cs`.
-
-
-## Dokumentasi
-
-- **PRD:** `docs/PRD_Slashers_UTS_PBKK.pdf`
-- **PRD yang dapat diedit:** `docs/PRD_Slashers_UTS_PBKK.docx`
-- **Checklist pengujian:** `docs/IMPLEMENTATION_QA.md`
-
-Video presentasi/demo dapat ditambahkan ke repository setelah selesai direkam dan diunggah.
-
-## Anggota Kelompok
-
-| No. | Nama | NIM |
-|---|---|---|
-| 1 | Rafael Mulia Wiratama Simarmata | 5025241196 |
-| 2 | Muhammad Rivaldi Sholihin | 5025241188 |
-| 3 | Ananda Faris GR | 5025231280 |
-
-## Status Proyek
-
-Slashers dikembangkan sebagai proyek ETS PBKK. Pengujian fungsional, dokumentasi, dan demonstrasi dilakukan untuk memastikan implementasi sesuai dengan kebutuhan pada PRD.
-
-Fitur yang dinyatakan selesai harus berdasarkan hasil pengujian aplikasi, bukan hanya keberadaan kode atau tampilan antarmuka.
-
----
-
-**Slashers — Your collection. Fully in control.**
