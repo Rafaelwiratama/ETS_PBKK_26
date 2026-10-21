@@ -2,7 +2,7 @@
 
 **Slashers** adalah aplikasi desktop Rich UI untuk mengelola katalog game, inventaris, transaksi pembelian dan penjualan, riwayat transaksi, stok kritis, mitra, serta laporan. Identitas visual menggunakan logo pixel-block berbentuk huruf **S** yang tersusun dari blok modular.
 
-> Proyek UTS PBKK ini mencakup PRD, implementasi aplikasi desktop, dan video presentasi/demo. Nama Slashers adalah nama produk dan tidak membatasi katalog hanya pada game bergenre slasher.
+> Proyek ETS PBKK ini mencakup PRD, implementasi aplikasi desktop, dan video presentasi/demo. Nama Slashers adalah nama produk dan tidak membatasi katalog hanya pada game bergenre slasher.
 
 ## 1. Ringkasan Produk
 
