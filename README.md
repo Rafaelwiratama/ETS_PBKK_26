@@ -6,7 +6,7 @@
 
 ## 1. Ringkasan Produk
 
-Yharnam Exchange telah diganti namanya menjadi **Slashers**. Aplikasi membantu pencatatan katalog game dan pergerakan stok melalui antarmuka Windows desktop. Pengguna dapat mengelola informasi game, mencatat pembelian dan penjualan, menelusuri transaksi, memantau stok kritis, melihat laporan, dan mengekspor data ke CSV.
+**Slashers** adalah Aplikasi membantu pencatatan katalog game dan pergerakan stok melalui antarmuka Windows desktop. Pengguna dapat mengelola informasi game, mencatat pembelian dan penjualan, menelusuri transaksi, memantau stok kritis, melihat laporan, dan mengekspor data ke CSV.
 
 Antarmuka menggunakan pendekatan Rich UI: sidebar navigasi, kartu statistik, grafik penjualan, katalog berbasis cover, panel detail, formulir, tabel transaksi, dan halaman laporan. Gaya visual memakai graphite `#171A22`, slate `#202631`, teal `#20BFA9`, amber `#FFC857`, coral `#FF647C`, dan off-white `#F0F2F5`.
 
